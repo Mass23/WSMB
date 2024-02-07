@@ -1,0 +1,177 @@
+body {
+    margin-left: 40px;
+    font-family: 'Andale Mono', monospace;
+    background: linear-gradient(90deg, #f0f0f0 20%, #fff 80%);
+    position: relative;
+    overflow: hidden;
+    text-size-adjust: auto;
+}
+
+header {
+    padding: 20px;
+    color: #333; /* Dark grey text color */
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px; /* Adjust the margin-top to position the banner higher */
+}
+
+.banner-element-link {
+    color: #666; /* Adjust the color to a lighter shade */
+    margin-left: 40px;/* Other styles for the element-class */
+}
+
+.top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; /* Hide overflow to contain glitch effects */
+    background-color: #f0f0f0; /* Light grey background color */
+    padding: 20px; /* Adjust the padding as needed */
+    width: 100%; /* Adjust the width to make it narrower */
+    margin-top: 0px; /* Add the missing semicolon here */
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #000; /* Black text color */
+    transition: color 0.667s ease; /* Smooth transition for color changes */
+}
+
+.title-swarm {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-left: 40px;
+    margin: 0;
+    color: #ff4500; /* Adjust title color */
+}
+
+.title-swarm h1 {
+    margin: 0;
+    margin-left: 40px;
+    font-size: 24px;
+    color: #ff4500; /* Adjust title color */
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    margin-left: 40px;
+}
+
+.title-swarm .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff4500; /* Adjust line color */
+    top: 50%;
+    left: 40px;
+    transform-origin: left;
+    z-index: 0;
+    margin-left: 40px;
+}
+
+.top-banner:hover .title {
+    color: #ff4500; /* Bright red-orange on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Dark grey text color */
+    font-style: italic;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.top-banner a:hover {
+    color: #ff4500; /* Bright red-orange on hover */
+}
+
+
+#imageSwarm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    margin: 40px; /* Add margin to the entire content area */
+}
+
+.left-column {
+    margin-right: 20%; /* Add right margin to the left column */
+}
+
+.right-column {
+    position: absolute; /* Set absolute positioning for the right column */
+    top: 0; /* Position it at the top */
+    right: 0; /* Position it at the right */
+    display: flex;
+    flex-direction: column;
+    width: 20%; /* Adjust the width to your desired size */
+    height: 800px; /* Take the full height of the content container */
+    overflow-y: auto; 
+}
+
+.right-column figure {
+    margin-bottom: 40px; /* Add bottom margin to each figure */
+}
+
+.right-column img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+}
+
+
+
+
+.quote-left {
+    font-family: 'Andale Mono', monospace;
+    font-style: italic;
+    font-size: 1.4em; /* Adjust the font size as needed */
+    color: #666; /* Adjust the color to a lighter shade of grey */
+    text-align: left;
+    width: auto;
+}
+
+.quote-right {
+    font-family: 'Andale Mono', monospace;
+    font-style: italic;
+    font-size: 1.4em; /* Adjust the font size as needed */
+    color: #666; /* Adjust the color to a lighter shade of grey */
+    text-align: right;
+    width: auto;
+}
+
+.quote-left-small {
+    font-family: 'Andale Mono', monospace;
+    font-size: 1em; /* Adjust the font size as needed */
+    color: #666; /* Adjust the color to a lighter shade of grey */
+    text-align: left;
+    width: auto;
+}
+
+.quote-right-small {
+    font-family: 'Andale Mono', monospace;
+    font-size: 1em; /* Adjust the font size as needed */
+    color: #666; /* Adjust the color to a lighter shade of grey */
+    text-align: right;
+    width: auto;
+}
